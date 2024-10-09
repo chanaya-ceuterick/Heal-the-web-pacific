@@ -1,0 +1,20 @@
+.leadedGlasOne{
+    display: grid !important;
+    width: 100%;
+    grid-template-areas:
+    'a a a a'
+    'b c c d'
+}
+
+.leadedGlasOne__subtitle{
+    grid-area: a;
+}
+.leadedGlasOne__img{
+    grid-area: b;
+}
+.leadedGlasOne__txt{
+    grid-area: c;
+}
+.leadedGlasOne__table{
+    grid-area: d;
+}
