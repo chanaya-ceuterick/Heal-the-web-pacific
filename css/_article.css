@@ -1,20 +1,29 @@
-.leadedGlasOne{
+.leadedGlasOne {
     display: grid !important;
+    justify-content: center;
     width: 100%;
+
     grid-template-areas:
-    'a a a a'
-    'b c c d'
+        'a a a a'
+        'b c c d'
 }
 
-.leadedGlasOne__subtitle{
+.leadedGlasOne__subtitle {
     grid-area: a;
 }
-.leadedGlasOne__img{
+
+.leadedGlasOne__img {
     grid-area: b;
+    margin: auto;
 }
-.leadedGlasOne__txt{
+
+.leadedGlasOne__txt {
     grid-area: c;
+    margin: auto;
 }
-.leadedGlasOne__table{
+
+.leadedGlasOne__table {
     grid-area: d;
+    width: 60%;
+    margin: auto;
 }
