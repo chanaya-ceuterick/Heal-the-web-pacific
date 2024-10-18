@@ -1,0 +1,35 @@
+.leadedGlasThree {
+    display: grid !important;
+    justify-content: space-between;
+    width: 100%;
+
+    grid-template-areas:
+        'a a a a'
+        'b c c c'
+        'd d d d'
+    ;
+}
+
+.leadedGlasThree__title
+{
+    grid-area: a;
+}
+.leadedGlasThree__img
+{
+    grid-area: b;
+}
+.leadedGlasThree__txt
+{
+    grid-area: c;
+    margin-left: 1rem;
+}
+.leadedGlasThree__table
+{
+    grid-area: d;
+    width: 20%;
+    margin: auto;
+}
+.leadedGlasThree__margin
+{
+    padding-left: 0;
+}

@@ -1,0 +1,35 @@
+.leadedGlasFour{
+    display: grid !important;
+    justify-content: space-between;
+    width: 100em;
+
+    grid-template-areas:
+    'a a a a a'
+    'b b c c c'
+    'd d d e e'
+;
+}
+
+.leadedGlasFour__title {
+    grid-area: a;
+}
+
+.leadedGlasFour__imgOne {
+    grid-area: b;
+    margin: auto;
+}
+
+.leadedGlasFour__txtOne {
+    grid-area: c;
+    margin: auto;
+}
+
+.leadedGlasFour__imgTwo {
+    grid-area: e;
+    margin: auto;
+}
+
+.leadedGlasFour__txtTwo {
+    grid-area: d;
+    margin: auto;
+}

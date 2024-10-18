@@ -21,6 +21,10 @@ body {
     font-size: 1em;
 }
 
+main{
+    margin-bottom: 5em;
+}
+
 h1 {
     font-size: 2.5em;
     color: rgb(76, 232, 76);
@@ -47,12 +51,21 @@ p {
     padding: 1rem;
 }
 
-span{
+span {
     font-weight: bold;
 }
 
 li {
     margin-left: 1rem;
+}
+
+div ul li {
+    margin-left: 2rem;
+}
+
+a {
+    color: yellow;
+    text-decoration: underline;
 }
 
 table {
@@ -80,4 +93,14 @@ th {
 
 tr:hover {
     background-color: lightsalmon;
+}
+
+.subtitle-underlined {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.subtitle-underlined--bold {
+    font-weight: bold;
+    text-decoration: underline;
 }
