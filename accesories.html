@@ -11,30 +11,34 @@
 
 <body>
     <header>
-        <img src="assets/logo.gif" alt="logo">
-        <!-- <div> 
-            <img src="assets/name-01.gif" alt="heading-part-01">
-            <img src="assets/name-02.gif" alt="heading-part-02">
-        </div> -->
-        <h1>Pacific Northwest X-Ray Inc.</h1>
-        <img src="assets/search.gif" alt="search">
+        <img class="logo" src="assets/logo.gif" alt="logo">
+        <h1 class="title">Pacific Northwest X-Ray Inc.</h1>
+        <img class="image-search" src="assets/search.gif" alt="search">
+        <div class="search-container">
+            <form action="/" method="get">
+                <input type="text" id="search-input" name="query" placeholder="Search...">
+                <button type="submit" id="search-button">Go!</button>
+            </form>
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
     </header>
-    <nav>
+
+    <nav id="nav-menu" class="hidden">
         <ul style="list-style-type: none; padding: 0; background-color: black;">
-            <li style="display: inline; margin-right: 20px;">
-                <a href="#standard-lead-glass" style="color: white; text-decoration: none; padding: 10px;">Home</a>
+            <li>
+                <a href="index.html">Home</a>
             </li>
-            <li style="display: inline; margin-right: 20px;">
-                <a href="#additional-options" style="color: white; text-decoration: none; padding: 10px;">Equipment</a>
+            <li>
+                <a href="#additional-options">Equipment</a>
             </li>
-            <li style="display: inline; margin-right: 20px;">
-                <a href="#common-sizes" style="color: white; text-decoration: none; padding: 10px;">Accessories</a>
+            <li>
+                <a href="#accessories">Accessories</a>
             </li>
-            <li style="display: inline; margin-right: 20px;">
-                <a href="#telescopic-frames" style="color: white; text-decoration: none; padding: 10px;">Supplies</a>
+            <li>
+                <a href="#telescopic-frames">Supplies</a>
             </li>
-            <li style="display: inline;">
-                <a href="#x-ray-tape" style="color: white; text-decoration: none; padding: 10px;">Parts</a>
+            <li>
+                <a href="#x-ray-tape">Parts</a>
             </li>
         </ul>
     </nav>

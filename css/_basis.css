@@ -6,7 +6,7 @@
 }
 
 html {
-    width: 95em;
+    width: 100em;
     height: 100%;
     margin: 0 auto;
 }
@@ -24,9 +24,9 @@ body {
 h1 {
     font-size: 2.5em;
     color: rgb(76, 232, 76);
-    text-shadow: 
-                2px 2px 5px rgba(255, 255, 255, 0.7), 
-                2px 2px 5px rgba(0, 0, 0, 0.7); 
+    text-shadow:
+        2px 2px 5px rgba(255, 255, 255, 0.7),
+        2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 h2 {
@@ -35,11 +35,24 @@ h2 {
     background: linear-gradient(to top, black, lightgrey);
     border-radius: 50px 50px 0 0;
     padding-left: 20px;
-    margin: 1rem 0 ;
+    margin: 1rem 0;
 }
 
-h3{
+h3 {
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+span{
+    font-weight: bold;
+}
+
+li {
+    margin-left: 1rem;
 }
 
 table {
@@ -51,7 +64,8 @@ table {
     border: 5px solid white;
 }
 
-th, td {
+th,
+td {
     padding: 8px;
     text-align: left;
     font-size: 1em;
@@ -67,4 +81,3 @@ th {
 tr:hover {
     background-color: lightsalmon;
 }
-

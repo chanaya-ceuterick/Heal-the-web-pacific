@@ -1,11 +1,11 @@
 .leadedGlasOne {
     display: grid !important;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 100em;
 
     grid-template-areas:
         'a a a a'
-        'b c c d'
+        'b c c d';
 }
 
 .leadedGlasOne__subtitle {
