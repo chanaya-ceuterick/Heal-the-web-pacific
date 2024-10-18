@@ -1,0 +1,65 @@
+footer {
+    display: grid !important;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    grid-template-areas:
+        'a a a a'
+        'b c d e'
+        'f f f f'
+        'g g g g'
+    ;
+}
+
+.footer__title {
+    grid-area: a;
+    font-size: medium;
+    color: greenyellow;
+}
+
+.footer__pay {
+    grid-area: b;
+    margin: auto;
+}
+
+.footer__email {
+    grid-area: c;
+    margin: auto;
+    text-align: center;
+}
+
+.footer__phone {
+    grid-area: d;
+    margin: auto;
+    text-align: center;
+}
+
+.footer__fax {
+    grid-area: e;
+    margin: auto;
+    text-align: center;
+}
+
+.footer__txt {
+    grid-area: f;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    color: yellow;
+}
+
+.footer__end {
+    grid-area: g;
+    text-align: center;
+    font-size: small;
+    color: yellow;
+}
+
+.red-underline
+{
+    text-decoration: underline;
+    color: red;
+}
+.green-txt
+{
+    color: greenyellow;
+}

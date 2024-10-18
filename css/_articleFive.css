@@ -1,0 +1,61 @@
+.merchantBoard
+{
+    display: grid !important;
+    justify-content: space-between;
+
+    grid-template-areas:
+    'a a a a a'
+    'b b c c c'
+    'b b e e e'
+    'f f f g g'
+    'h h h g g'
+    'i i i g g'
+    'j j j j j'
+;
+}
+
+.merchantBoard__title
+{
+    grid-area: a;
+}
+.merchantBoard__imgOne
+{
+    grid-area: b;
+}
+.merchantBoard__products
+{
+    grid-area: c;
+    margin: auto;
+}
+.merchantBoard__txtOne
+{
+    grid-area: e;
+    margin: 0 2rem;
+}
+
+.merchantBoard__txtTwo
+{
+    grid-area: f;
+    margin: auto 0;
+}
+.merchantBoard__enlarge
+{
+    grid-area: h;
+}
+
+.merchantBoard__imgTwo
+{
+    grid-area: g;
+}
+.merchantBoard__table
+{
+    grid-area: i;
+    width: 60%;
+    margin: auto;
+}
+.merchantBoard__imgThree
+{
+    grid-area: j;
+    margin: auto;
+    padding: 3rem 0;
+}
