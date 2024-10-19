@@ -1,61 +1,137 @@
-.merchantBoard
-{
+.merchantBoard {
     display: grid !important;
     justify-content: space-between;
+    width: 100%;
 
     grid-template-areas:
-    'a a a a a'
-    'b b c c c'
-    'b b e e e'
-    'f f f g g'
-    'h h h g g'
-    'i i i g g'
-    'j j j j j'
-;
+        'a a a a a'
+        'b b c c c'
+        'b b e e e'
+        'f f f g g'
+        'h h h g g'
+        'i i i g g'
+        'j j j j j'
+    ;
 }
 
-.merchantBoard__title
-{
+.merchantBoard__title {
     grid-area: a;
 }
-.merchantBoard__imgOne
-{
+
+.merchantBoard__imgOne {
     grid-area: b;
 }
-.merchantBoard__products
-{
+
+.merchantBoard__products {
     grid-area: c;
     margin: auto;
 }
-.merchantBoard__txtOne
-{
+
+.merchantBoard__txtOne {
     grid-area: e;
     margin: 0 2rem;
 }
 
-.merchantBoard__txtTwo
-{
+.merchantBoard__txtTwo {
     grid-area: f;
     margin: auto 0;
 }
-.merchantBoard__enlarge
-{
+
+.merchantBoard__enlarge {
     grid-area: h;
 }
 
-.merchantBoard__imgTwo
-{
+.merchantBoard__imgTwo {
     grid-area: g;
 }
-.merchantBoard__table
-{
+
+.merchantBoard__table {
     grid-area: i;
     width: 60%;
     margin: auto;
 }
-.merchantBoard__imgThree
-{
+
+.merchantBoard__imgThree {
     grid-area: j;
     margin: auto;
     padding: 3rem 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .merchantBoard {
+        grid-template-areas:
+            'a a a a a'
+            'b b f f f'
+            'c c c h h'
+            'e e e g g'
+            'j j j i i'
+        ;
+    }
+
+    .merchantBoard__txtOne {
+        margin: 0;
+        padding-right: 1rem;
+    }
+    .merchantBoard__txtTwo {
+        padding-left: 1rem;
+    }
+
+    .merchantBoard__imgOne,.merchantBoard__imgTwo, .merchantBoard__imgThree{
+        width: 100%;
+    }
+    .merchantBoard__table
+    {
+        width: 95%;
+    }
+    .merchantBoard__enlarge,
+    .merchantBoard__products {
+        margin: auto;
+        padding: 1rem 0;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 499px) {
+    .merchantBoard {
+        grid-template-areas:
+            'a a a a a'
+            'b b b b b'
+            'd d d d d'
+            'c c c c c'
+            'f f f f f'
+            'g g g g g'
+            'e e e e e'
+            'h h h h h'
+            'i i i i i'
+            'j j j j j'
+        ;
+    }
+
+    .merchantBoard__txtTwo {
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+
+    .merchantBoard__txtOne {
+        padding-top: 1rem;
+    }
+
+    .merchantBoard__imgTwo,
+    .merchantBoard__imgThree,
+    .merchantBoard__imgOne {
+        width: 100%;
+    }
+
+    .merchantBoard__table {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .merchantBoard__enlarge,
+    .merchantBoard__products {
+        margin: auto;
+        padding: 1rem 0;
+    }
+
 }
