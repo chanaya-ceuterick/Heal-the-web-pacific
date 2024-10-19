@@ -81,8 +81,27 @@ nav ul li a {
 
 /* Responsiviteit */
 @media (max-width: 768px) {
+    header {
+        grid-template-areas:
+            'a a a a'
+            'b b b b'
+            'd d d c';
+        margin: 0;
+        width: 100%;
+    }
+
+    .title{
+        max-width: 70%;
+        margin: .5rem 0;
+    }
+
+    .image-search {
+        display: none;
+    }
+
     .hamburger {
         display: block;
+        grid-area: c;
     }
 
     nav {
@@ -93,9 +112,9 @@ nav ul li a {
         display: block;
         position: absolute;
         background-color: black;
-        width: 95em;
-        top: 50px;
-        left: 0;
+        width: 100%;
+        bottom: 38%;
+        right: 0;
     }
 
     nav ul {
@@ -105,5 +124,11 @@ nav ul li a {
     nav ul li {
         margin: 10px 0;
         text-align: center;
+
+        
+    }
+    nav ul li:hover {
+    color: greenyellow;
+        
     }
 }

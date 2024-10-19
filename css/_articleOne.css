@@ -1,12 +1,41 @@
 .leadedGlasOne {
     display: grid !important;
     justify-content: space-between;
-    width: 100em;
-
     grid-template-areas:
         'a a a a'
         'b c c d';
 }
+
+@media screen and (min-width: 300px) {
+    .leadedGlasOne {
+        grid-template-areas:
+            'a a a a'
+            'b b b b'
+            'c c c c'
+            'd d d d';
+    }
+    .leadedGlasOne__table
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .leadedGlasOne {
+        grid-template-areas:
+            'a a a a'
+            'b b c c'
+            'b b d d';
+    }
+}
+@media screen and (min-width: 1200px) {
+    .leadedGlasOne {
+        grid-template-areas:
+        'a a a a'
+        'b c c d';
+    }
+}
+
 
 .leadedGlasOne__subtitle {
     grid-area: a;
