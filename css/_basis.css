@@ -6,14 +6,13 @@
 }
 
 html {
-    width: 100vw;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
+    width: 100%;
+    height: auto;
 }
 
 body {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     height: auto;
     background-image: url(../assets/skyimge.jpg);
     background-size: auto;
@@ -22,7 +21,7 @@ body {
     font-size: 1em;
 }
 
-main{
+main {
     margin-bottom: 5em;
 }
 
@@ -47,8 +46,9 @@ h3 {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
 h4 {
-    padding:  2rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -74,12 +74,12 @@ a {
 }
 
 table {
-
-    border-collapse: collapse;
     margin: 20px 0;
     font-size: 1em;
     background: lightyellow;
     border: 5px solid white;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th,
@@ -88,6 +88,8 @@ td {
     text-align: left;
     font-size: 1em;
     border: 1px solid grey;
+    word-wrap: break-word; 
+    overflow: hidden;
 }
 
 th {
@@ -108,4 +110,37 @@ tr:hover {
 .subtitle-underlined--bold {
     font-weight: bold;
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    thead {
+        display: none;
+    }
+
+    tbody, tr, td {
+        display: block; 
+        width: 97.8%; 
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: right; 
+        position: relative;
+    }
+
+    p{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute; 
+        left: 0;
+        padding-left: 10px; 
+        font-weight: bold; 
+    }
 }

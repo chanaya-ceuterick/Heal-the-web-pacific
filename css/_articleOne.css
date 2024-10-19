@@ -1,58 +1,66 @@
-.leadedGlasOne {
-    display: grid !important;
-    justify-content: space-between;
-    grid-template-areas:
-        'a a a a'
-        'b c c d';
-}
+ .leadedGlasOne {
+     display: grid !important;
+     justify-content: space-between;
+     width: 100%;
+     grid-template-areas:
+         'a a a a'
+         'b c c d';
+ }
 
-@media screen and (min-width: 300px) {
-    .leadedGlasOne {
-        grid-template-areas:
-            'a a a a'
-            'b b b b'
-            'c c c c'
-            'd d d d';
+ .leadedGlasOne__subtitle {
+     grid-area: a;
+ }
+
+ .leadedGlasOne__img {
+     grid-area: b;
+     margin: auto;
+ }
+
+ .leadedGlasOne__txt {
+     grid-area: c;
+     margin: auto;
+     width: 100%;
+ }
+
+ .leadedGlasOne__table {
+     grid-area: d;
+     margin: auto;
+ }
+
+ @media screen and (max-width: 1399px) {
+     .leadedGlasOne {
+         grid-template-areas:
+             'a a a a'
+             'b b c c'
+             'b b d d';
+     }
+
+     .leadedGlasOne__img {
+         height: 50%;
+         margin-right: 1rem;
+     }
+     .leadedGlasOne__txt {
+       padding-bottom: 1rem;
     }
-    .leadedGlasOne__table
-    {
-        width: 100%;
-    }
-}
+ }
 
-@media screen and (min-width: 500px) {
-    .leadedGlasOne {
-        grid-template-areas:
-            'a a a a'
-            'b b c c'
-            'b b d d';
-    }
-}
-@media screen and (min-width: 1200px) {
-    .leadedGlasOne {
-        grid-template-areas:
-        'a a a a'
-        'b c c d';
-    }
-}
+ @media screen and (max-width: 799px) {
+     .leadedGlasOne {
+         grid-template-areas:
+             'a a a a'
+             'b b b b'
+             'c c c c'
+             'd d d d';
+     }
 
+     .leadedGlasOne__txt {
+         margin: 0;
+         padding: 1rem 0;
+     }
 
-.leadedGlasOne__subtitle {
-    grid-area: a;
-}
-
-.leadedGlasOne__img {
-    grid-area: b;
-    margin: auto;
-}
-
-.leadedGlasOne__txt {
-    grid-area: c;
-    margin: auto;
-}
-
-.leadedGlasOne__table {
-    grid-area: d;
-    width: 60%;
-    margin: auto;
-}
+     .leadedGlasOne__img {
+         width: 50%;
+         height: auto;
+         margin: 0 auto;
+     }
+ }
