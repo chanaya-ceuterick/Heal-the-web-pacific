@@ -49,7 +49,12 @@
 
         <article class="leadedGlasOne">
             <h2 class="leadedGlasOne__subtitle">Leaded Glass</h2>
-            <img class="leadedGlasOne__img" src="assets/image-01.jpg" alt="leaded-glass-img">
+            <!-- <img class="leadedGlasOne__img" src="assets/avif/image-01/img-01-1.avif" alt="leaded-glass-img"> -->
+            <picture>
+                <img class="leadedGlasOne__img" sizes="(max-width: 300px) 100vw, 300px" srcset="assets/avif/image-01/img-01-1.avif 200w,
+                assets/avif/image-01/img-01-2.avif 300w
+                " src="./assets/avif/image-01.avif" alt="leaded-glass-img">
+            </picture>
             <div class="leadedGlasOne__txt">
                 <h3>Standard Lead Glass</h3>
                 <ul>
@@ -104,7 +109,16 @@
 
         <article class="leadedGlasTwo">
             <h2 class="leadedGlasTwo__title">Leaded Glass</h2>
-            <img class="leadedGlasTwo__imgOne" src="assets/image-02.jpg" alt="leaded-glass-img">
+            <!-- <img class="leadedGlasTwo__imgOne" src="assets/image-02.jpg" alt="leaded-glass-img"> -->
+            <picture>
+                <img class="leadedGlasTwo__imgOne"
+                sizes="(max-width: 700px) 100vw, 700px"
+                srcset="
+                assets/avif/image-02/img-02-1.avif 200w,
+                assets/avif/image-02/img-02-2.avif 700w"
+                src="assets/avif/image-02.avif"
+                alt="">
+                </picture>
             <p class="leadedGlasTwo__txtOne">
                 <span>ALSO AVAILABLE:</span> Hurricane Glass rated for various missile impacts, bullet resistant glass,
                 fire rated
@@ -152,8 +166,10 @@
                 <thead>
                     <tr>
                         <th>Window Size (in Inches)</th>
-                        <th>5/16" Thick 1.6 mm pb Equivalent<br>Standard Lead Glass<br>WITHOUT Frame<br>(Stock # / Your Price)</th>
-                        <th>5/16" Thick 1.6 mm pb<br>Standard Lead Glass<br>WITH Standard Frame<br>(Stock # / Your Price)</th>
+                        <th>5/16" Thick 1.6 mm pb Equivalent<br>Standard Lead Glass<br>WITHOUT Frame<br>(Stock # / Your
+                            Price)</th>
+                        <th>5/16" Thick 1.6 mm pb<br>Standard Lead Glass<br>WITH Standard Frame<br>(Stock # / Your
+                            Price)</th>
                         <th>Fully Boxed/Crated Ship Weights<br>Glass Only / Glass & Frame / Ships VIA</th>
                     </tr>
                 </thead>
@@ -196,12 +212,14 @@
                 <tbody>
                     <tr>
                         <td data-label="Stock #">XRGT</td>
-                        <td data-label="Description">1x 25' Roll of X-Ray <br>Glazing TapeHighly recommended for <br>Glass purchased without Frame.</td>
+                        <td data-label="Description">1x 25' Roll of X-Ray <br>Glazing TapeHighly recommended for
+                            <br>Glass purchased without Frame.</td>
                         <td data-label="Your Price">$Call</td>
                     </tr>
                     <tr>
                         <td data-label="Stock #">XR-POL</td>
-                        <td data-label="Description">Lead Glass Polishing Kit<br>Reduces hair-line scratches and fogging.</td>
+                        <td data-label="Description">Lead Glass Polishing Kit<br>Reduces hair-line scratches and
+                            fogging.</td>
                         <td data-label="Your Price">$Call</td>
                     </tr>
                     <tr>
@@ -216,7 +234,8 @@
                     </tr>
                     <tr>
                         <td data-label="Stock #">PNWX-XG6X24SGF</td>
-                        <td data-label="Description">6" x 24" Lead lined <br>Vision Frame with X-Ray<br> Safety Glassto fit 1-3/4" thick door</td>
+                        <td data-label="Description">6" x 24" Lead lined <br>Vision Frame with X-Ray<br> Safety Glassto
+                            fit 1-3/4" thick door</td>
                         <td data-label="Your Price">$Call</td>
                     </tr>
                 </tbody>
@@ -405,14 +424,14 @@
             <p>
                 <span class="red-underline">Phone Lines open... <br></span>
                 <span class="green-txt">8am - 5pm Monday-Friday (Pacific/West Coast Time)</span> <br>
-               <a href="#">Phone: 1-503-667-3000 <br></a> 
-               <span class="subtitle-underlined--bold">Toll-Free (US): 800-827-XRAY (800-827-9729)</span> 
+                <a href="#">Phone: 1-503-667-3000 <br></a>
+                <span class="subtitle-underlined--bold">Toll-Free (US): 800-827-XRAY (800-827-9729)</span>
             </p>
         </div>
         <div class="footer__fax">
             <img src="assets/FaxMach.gif" alt="fax">`
             <h3>
-               <a href="#">Download our order form</a> 
+                <a href="#">Download our order form</a>
             </h3>
             <p>
                 and then...Fax Your Order
