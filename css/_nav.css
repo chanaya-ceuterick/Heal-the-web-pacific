@@ -58,6 +58,10 @@ nav ul li a {
     padding: 10px;
 }
 
+nav ul li a:hover{
+color: greenyellow;
+}
+
 #search-input {
     padding: 8px;
     border: 1px solid #ccc;
