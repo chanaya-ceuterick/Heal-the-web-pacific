@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    background-image: url(../assets/skyimge.jpg);
+    background-size: auto;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 1em;
+}
+
+main {
+    margin-bottom: 5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: rgb(76, 232, 76);
+    text-shadow:
+        2px 2px 5px rgba(255, 255, 255, 0.7),
+        2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: lightblue;
+    background: linear-gradient(to top, black, lightgrey);
+    border-radius: 50px 50px 0 0;
+    padding-left: 20px;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+p {
+    padding: 1rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+div ul li {
+    margin-left: 2rem;
+}
+
+a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+table {
+    margin: 20px 0;
+    font-size: 1em;
+    background: lightyellow;
+    border: 5px solid white;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    font-size: 1em;
+    border: 1px solid grey;
+    word-wrap: break-word; 
+    overflow: hidden;
+}
+
+th {
+    background-color: lightpink;
+    font-size: 1em;
+    border: 1px solid grey;
+}
+
+tr:hover {
+    background-color: lightsalmon;
+}
+
+.subtitle-underlined {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.subtitle-underlined--bold {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    thead {
+        display: none;
+    }
+
+    tbody, tr, td {
+        display: block; 
+        width: 97.8%; 
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: right; 
+        position: relative;
+    }
+
+    p{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute; 
+        left: 0;
+        padding-left: 10px; 
+        font-weight: bold; 
+    }
+}

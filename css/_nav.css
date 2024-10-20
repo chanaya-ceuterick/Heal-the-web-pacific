@@ -1,0 +1,147 @@
+header {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        'a b b b'
+        'a c d d';
+}
+
+.logo {
+    grid-area: a;
+    height: 100%;
+    margin: auto 0;
+}
+
+.title {
+    grid-area: b;
+}
+
+.image-search {
+    grid-area: c;
+    height: auto;
+    width: 20rem;
+}
+
+.search-container {
+    grid-area: d;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 4px calc(60%/6);
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 5px;
+    width: auto;
+}
+
+#search-button {
+    background-color: darkgrey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: grey;
+}
+
+@media (max-width: 1399px) {
+    header {
+        grid-template-areas:
+        'a b b b'
+        'a c d d';
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        margin: auto 0;
+    }
+    nav ul li {
+        margin: 4px calc(100%/8);
+    }
+}
+@media (max-width: 768px) {
+    header {
+        grid-template-areas:
+            'a a a a'
+            'b b b b'
+            'd d d c';
+        margin: 0;
+        width: 100%;
+    }
+
+    .title{
+        max-width: 70%;
+        margin: .5rem 0;
+    }
+
+    .image-search {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        grid-area: c;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.show {
+        display: block;
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+
+        
+    }
+    nav ul li:hover {
+    color: greenyellow;
+        
+    }
+}

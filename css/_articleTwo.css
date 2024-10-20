@@ -1,0 +1,126 @@
+.leadedGlasTwo {
+    display: grid !important;
+    justify-content: space-between;
+    width: 100%;
+
+    grid-template-areas:
+        'a a a a a'
+        'b b c c c'
+        'd d d e e'
+        'f f f f f'
+        'g g g g g'
+    ;
+}
+
+.leadedGlasTwo__title {
+    grid-area: a;
+}
+
+.leadedGlasTwo__imgOne {
+    grid-area: b;
+    margin: auto;
+}
+
+.leadedGlasTwo__txtOne {
+    grid-area: c;
+    margin: auto;
+}
+
+.leadedGlasTwo__imgTwo {
+    grid-area: e;
+    margin: auto;
+}
+
+.leadedGlasTwo__txtTwo {
+    grid-area: d;
+    margin: auto;
+}
+
+.leadedGlasTwo__tableOne {
+    grid-area: f;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.leadedGlasTwo__tableTwo {
+    grid-area: g;
+    width: 40%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1399px) {
+    .leadedGlasTwo {
+        grid-template-areas:
+            'a a a a a'
+            'b b b e e'
+            'c c c d d'
+            'f f f f f'
+            'g g g g g'
+    }
+    .leadedGlasTwo__imgOne, .leadedGlasTwo__imgTwo{
+        width: 95%;
+        height: auto;
+    }
+    .leadedGlasTwo__txtOne,
+    .leadedGlasTwo__txtTwo {
+        margin: 0;
+    }
+    .leadedGlasTwo__tableOne,
+    .leadedGlasTwo__tableTwo {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .leadedGlasTwo {
+        grid-template-areas:
+            'a a a a a'
+            'b b b e e'
+            'c c c d d'
+            'f f f g g'
+    }
+    .leadedGlasTwo__imgOne, .leadedGlasTwo__imgTwo{
+        width: 95%;
+        height: auto;
+    }
+    .leadedGlasTwo__txtOne,
+    .leadedGlasTwo__txtTwo {
+        margin: 0;
+    }
+    .leadedGlasTwo__tableOne,
+    .leadedGlasTwo__tableTwo {
+        width: 95%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .leadedGlasTwo {
+        grid-template-areas:
+            'a a a a'
+            'b b b b'
+            'c c c c'
+            'e e e e'
+            'd d d d'
+            'f f f f'
+            'g g g g'
+        ;
+    }
+
+    .leadedGlasTwo__imgOne,
+    .leadedGlasTwo__imgTwo {
+        width: 100%;
+        height: auto;
+    }
+
+    .leadedGlasTwo__txtOne,
+    .leadedGlasTwo__txtTwo {
+        padding: 1rem 0;
+        margin: 0;
+    }
+
+    .leadedGlasTwo__tableOne,
+    .leadedGlasTwo__tableTwo {
+        width: 100%;
+    }
+
+}
