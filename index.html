@@ -48,12 +48,18 @@
 
         <article class="leadedGlasOne">
             <h2 class="leadedGlasOne__subtitle">Leaded Glass</h2>
-            <!-- <img class="leadedGlasOne__img" src="assets/avif/image-01/img-01-1.avif" alt="leaded-glass-img"> -->
-            <picture>
-                <img class="leadedGlasOne__img" sizes="(max-width: 300px) 100vw, 300px" srcset="assets/avif/image-01/img-01-1.avif 200w,
-                assets/avif/image-01/img-01-2.avif 300w
-                " src="./assets/avif/image-01.avif" alt="leaded-glass-img">
+            <picture class="leadedGlasOne__img">
+                <source type="image/avif" srcset="assets/avif/image-01/img-01-1.avif 200w, 
+                                    assets/avif/image-01/img-01-2.avif 300w"
+                    sizes="(min-width: 1400px) 300px, (min-width: 1080px) 96px, (min-width: 800px) calc(-2.31vw + 127px), 300px">
+
+                <source type="image/jpeg" srcset="assets/jpg/image/img-01-200.jpg 200w, 
+                                    assets/jpg/image/img-01-300.jpg 300w"
+                    sizes="(min-width: 1400px) 300px, (min-width: 1080px) 96px, (min-width: 800px) calc(-2.31vw + 127px), 300px">
+
+                <img class="leadedGlasOne__img" src="./assets/jpg/image-01/image-01.jpg" alt="leaded-glass-img">
             </picture>
+
             <div class="leadedGlasOne__txt">
                 <h3>Standard Lead Glass</h3>
                 <ul>
@@ -108,16 +114,18 @@
 
         <article class="leadedGlasTwo">
             <h2 class="leadedGlasTwo__title">Leaded Glass</h2>
-            <!-- <img class="leadedGlasTwo__imgOne" src="assets/image-02.jpg" alt="leaded-glass-img"> -->
-            <picture>
-                <img class="leadedGlasTwo__imgOne"
-                sizes="(max-width: 700px) 100vw, 700px"
-                srcset="
-                assets/avif/image-02/img-02-1.avif 200w,
-                assets/avif/image-02/img-02-2.avif 700w"
-                src="assets/avif/image-02.avif"
-                alt="">
-                </picture>
+            <picture class="leadedGlasTwo__imgOne">
+                <source type="image/avif" srcset="assets/avif/image-02/img-02-1.avif 200w,
+                        assets/avif/image-02/img-02-2.avif 700w"
+                    sizes="(min-width: 1400px) 651px, (min-width: 1040px) calc(46.18vw - 40px), (min-width: 800px) 51.36vw, 95vw">
+
+                <source type="image/jpeg" srcset="./assets/jpg/image-02/img-02-200.jpg 200w,
+                        /assets/jpg/image-02/img-02-700.jpg 700w"
+                    sizes="(min-width: 1400px) 651px, (min-width: 1040px) calc(46.18vw - 40px), (min-width: 800px) 51.36vw, 95vw">
+
+                <img class="leadedGlasTwo__imgOne" src="./assets/jpg/image-02/image-02.jpg" alt="leaded-glass-img">
+            </picture>
+
             <p class="leadedGlasTwo__txtOne">
                 <span>ALSO AVAILABLE:</span> Hurricane Glass rated for various missile impacts, bullet resistant glass,
                 fire rated
@@ -136,7 +144,21 @@
                 NOT REQUIRED by any safety code to be "tempered". Our X-Ray Safety Glass
             </p>
 
-            <img class="leadedGlasTwo__imgTwo" src="assets/image-03.jpg" alt="leaded-glass-img">
+            <picture class="leadedGlasTwo__imgTwo">
+                <source type="image/avif" srcset=" ./assets/avif/image-03/img-03-1.avif 200w,
+                ./assets/avif/image-03/img-03-2.avif 459w,
+                ./assets/avif/image-03/img-03-3.avif 576w"
+                    sizes="(min-width: 1400px) 576px, (min-width: 800px) calc(29.66vw + 56px), 95vw">
+
+                <source type="image/jpeg" srcset="./assets/jpg/image-03/img-200.jpg 200w,
+                ./assets/jpg/image-03/img-460.jpg 460w,
+                ./assets/jpg/image-03/img-576.jpg 576w"
+                    sizes="(min-width: 1400px) 576px, (min-width: 800px) calc(29.66vw + 56px), 95vw">
+
+                <img class="leadedGlasTwo__imgTwo" src="./assets/jpg/image-03/img-200.jpg" alt="leaded-glass-img">
+            </picture>
+
+
             <div class="leadedGlasTwo__txtTwo">
                 <p>
                     meets all current glass safety codes for impact resistance and is permanently labeled accordingly as
@@ -157,7 +179,10 @@
                     (Not to be utilized
                     for residential applications.) <span>Click to Enlarge for clarity details:</span>
                 </p>
-                <img class="leadedGlasTwo__enlarge" src="assets/enlarge.jpeg" alt="enlarge image">
+                <img class="leadedGlasTwo__enlarge" sizes="(max-width: 175px) 100vw, 175px" srcset="
+                ./assets/avif/enlarge_page-01/enlarge-200.avif 200w,
+                ./assets/avif/enlarge_page-01/enlarge-175.avif 175w" src="./assets/avif/enlarge.avif"
+                    alt="enlarge image">
             </div>
 
 
@@ -212,7 +237,8 @@
                     <tr>
                         <td data-label="Stock #">XRGT</td>
                         <td data-label="Description">1x 25' Roll of X-Ray <br>Glazing TapeHighly recommended for
-                            <br>Glass purchased without Frame.</td>
+                            <br>Glass purchased without Frame.
+                        </td>
                         <td data-label="Your Price">$Call</td>
                     </tr>
                     <tr>
@@ -243,7 +269,9 @@
 
         <article class="leadedGlasThree">
             <h2 class="leadedGlasThree__title">X-Ray Glazing Tape.</h2>
-            <img class="leadedGlasThree__img" src="assets/image-04.jpg" alt="leaded-glass-img">
+            <img class="leadedGlasThree__img" src="assets/jpg/image-04.jpg" alt="leaded-glass-img">
+
+
             <div class="leadedGlasThree__txt">
                 <h3>X-Ray Glazing Tape</h3>
                 <ul>
@@ -265,8 +293,6 @@
                 </p>
             </div>
 
-
-
             <table class="leadedGlasThree__table">
                 <thead>
                     <tr>
@@ -287,7 +313,18 @@
 
         <article class="leadedGlasFour">
             <h2 class="leadedGlasFour__title">Lead Lined Steel Telescopic Window frames.</h2>
-            <img class="leadedGlasFour__imgOne" src="assets/image-05.jpg" alt="leaded-glass-img">
+            <picture class="leadedGlasFour__imgOne">
+                <source type="image/avif" srcset=" ./assets/avif/image-05/img-05-1.avif 200w,
+                ./assets/avif/image-05/img-05-2.avif 550w"
+                    sizes="(min-width: 1400px) 550px, (min-width: 800px) calc(51.55vw - 32px), (min-width: 500px) 34.29vw, 95vw">
+
+                <source type="image/jpeg" srcset="./assets/jpg/image-05/img-200.jpg 200w,
+                ./assets/jpg/image-05/img-550.jpg 550w"
+                    sizes="(min-width: 1400px) 550px, (min-width: 800px) calc(51.55vw - 32px), (min-width: 500px) 34.29vw, 95vw">
+
+                <img class="leadedGlasFour__imgOne" src="./assets/jpg/image-05/image-05.jpg" alt="leaded-glass-img">
+            </picture>
+
             <div class="leadedGlasFour__txtOne">
                 <p>
                     Sold only with glass- see above. Lead lined telescopic steel frames are fabricated with 16 gauge
@@ -330,9 +367,19 @@
                 </ul>
             </div>
 
+            <picture class="leadedGlasFour__imgTwo">
+                <source type="image/avif" srcset=" ./assets/avif/image-03/img-03-1.avif 200w,
+                ./assets/avif/image-03/img-03-2.avif 459w,
+                ./assets/avif/image-03/img-03-3.avif 576w"
+                    sizes="(min-width: 1400px) 576px, (min-width: 800px) calc(34.31vw + 31px), (min-width: 500px) 34.29vw, 95vw">
 
+                <source type="image/jpeg" srcset="./assets/jpg/image-03/img-200.jpg 200w,
+                ./assets/jpg/image-03/img-460.jpg 460w,
+                ./assets/jpg/image-03/img-576.jpg 576w"
+                    sizes="(min-width: 1400px) 576px, (min-width: 800px) calc(34.31vw + 31px), (min-width: 500px) 34.29vw, 95vw">
 
-            <img class="leadedGlasFour__imgTwo" src="assets/image-03.jpg" alt="leaded-glass-img">
+                <img class="leadedGlasFour__imgTwo" src="./assets/jpg/image-03/img-200.jpg" alt="leaded-glass-img">
+            </picture>
             <div class="leadedGlasFour__txtTwo">
                 <ul>
                     <li>

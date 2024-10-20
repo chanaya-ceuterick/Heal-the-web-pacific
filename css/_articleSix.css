@@ -69,8 +69,6 @@
             'h h h i i i'
         ;
     }
-    
-
 
     .cassettes__imgFour,
     .cassettes__imgSix{
@@ -91,7 +89,7 @@
         margin-bottom: 1rem;
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .cassettes {
         grid-template-areas:
             'a a a a a a'
@@ -115,7 +113,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 425px) {
     .cassettes {
         grid-template-areas:
             'a a a a a a'

@@ -35,6 +35,7 @@
 .merchantBoard__txtTwo {
     grid-area: f;
     margin: auto 0;
+    padding: 2rem 0 1rem 0;
 }
 
 .merchantBoard__enlarge {
@@ -43,6 +44,7 @@
 
 .merchantBoard__imgTwo {
     grid-area: g;
+    padding-top: 2rem;
 }
 
 .merchantBoard__table {
@@ -61,7 +63,41 @@
     .merchantBoard {
         grid-template-areas:
             'a a a a a'
-            'b b f f f'
+            'b b b f f'
+            'c c c h h'
+            'e e e g g'
+            'j j j i i'
+        ;
+    }
+
+    .merchantBoard__txtOne {
+        margin: 0;
+        padding-right: 1rem;
+    }
+    .merchantBoard__txtTwo {
+        padding-left: 1rem;
+    }
+
+    .merchantBoard__imgOne,.merchantBoard__imgTwo, .merchantBoard__imgThree{
+        width: 70%;
+        margin: auto;
+    }
+    .merchantBoard__table
+    {
+        width: 95%;
+    }
+    .merchantBoard__enlarge,
+    .merchantBoard__products {
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    .merchantBoard {
+        grid-template-areas:
+            'a a a a a'
+            'b b b f f'
             'c c c h h'
             'e e e g g'
             'j j j i i'
@@ -87,12 +123,10 @@
     .merchantBoard__products {
         margin: auto;
         padding: 1rem 0;
-        width: 50%;
     }
 
 }
-
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 425px) {
     .merchantBoard {
         grid-template-areas:
             'a a a a a'
